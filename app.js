@@ -6,6 +6,11 @@ const app = Vue.createApp({
     };
   },
   methods:{
+    submitForm(event){
+      event.preventDefault(); // prevent refreach page.
+      alert('Submitted');
+    },
+
     setName(event,lastName){
       this.name = event.target.value + ' ' + lastName;
     },
