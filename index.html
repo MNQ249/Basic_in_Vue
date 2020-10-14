@@ -18,9 +18,11 @@
     </header>
     <section id="events">
       <h2>Events in Action</h2>
-      <button v-on:click="add()">Add</button>
-      <button v-on:click="remove()">Reduce</button>
+      <button v-on:click="add(10)">Add</button>
+      <button v-on:click="remove(5)">Reduce</button>
       <p>Result: {{ counter }}</p>
+      <input type="text" v-on:input="setName"> <!--- i want to leasin to input-->
+      <p>Your Name: {{ name}}</p>
     </section>
   </body>
 </html>
