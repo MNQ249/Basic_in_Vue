@@ -6,8 +6,8 @@ const app = Vue.createApp({
     };
   },
   methods:{
-    submitForm(event){
-      event.preventDefault(); // prevent refreach page.
+    submitForm(){
+      // event.preventDefault(); // prevent refreach page.
       alert('Submitted');
     },
 
